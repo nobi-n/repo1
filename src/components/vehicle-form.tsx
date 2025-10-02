@@ -4,12 +4,12 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { vehicleSchema } from "@/lib/schemas";
-import type { Vehicle } from "@/lib/types";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
+import { vehicleSchema } from "../lib/schemas";
+import type { Vehicle } from "../lib/types";
+import { Button } from "./ui/button";
+import { Input } from "./ui/input";
+import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "./ui/form";
 
 type VehicleFormProps = {
   onAddVehicle: (vehicle: Omit<Vehicle, 'id'>) => void;
@@ -116,3 +116,4 @@ export default function VehicleForm({ onAddVehicle }: VehicleFormProps) {
     </Card>
   );
 }
+

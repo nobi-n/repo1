@@ -1,18 +1,18 @@
 "use client";
 
 import { useState, useMemo, useRef } from "react";
-import type { Vehicle } from "@/lib/types";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Card, CardContent } from "@/components/ui/card";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import type { Vehicle } from "../lib/types";
+import { Button } from "./ui/button";
+import { Input } from "./ui/input";
+import { Card, CardContent } from "./ui/card";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "./ui/table";
 import { Search, FileUp, FileDown, Pencil, Trash2 } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
+} from "./ui/dropdown-menu"
 import { MoreHorizontal } from "lucide-react"
 
 type VehicleTableProps = {
@@ -130,3 +130,4 @@ export default function VehicleTable({ vehicles, onEdit, onDelete, onExport, onI
     </Card>
   );
 }
+
