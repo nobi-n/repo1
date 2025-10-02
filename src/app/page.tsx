@@ -1,4 +1,4 @@
-import { Badge } from "../components/ui/badge";
+import { Badge } from "@/components/ui/badge";
 import VehicleTracker from "@/components/vehicle-tracker";
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
           Vehicle & Fleet Tracker
         </h1>
         <p className="text-lg text-muted-foreground">
-          Ashok Earth Movers.
+          Data management by Anandu.
         </p>
         <div className="flex justify-center mt-3">
           <Badge variant="outline" className="border-primary/30 bg-primary/10 text-primary/80">

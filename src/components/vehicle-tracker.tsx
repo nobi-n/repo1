@@ -8,8 +8,8 @@ import EditVehicleModal from './edit-vehicle-modal';
 import DeleteVehicleModal from './delete-vehicle-modal';
 import { useToast } from "@/hooks/use-toast";
 import { exportToCsv, importFromCsv } from '@/lib/csv-utils';
-import { Skeleton } from './ui/skeleton';
-import { Card } from './ui/card';
+import { Skeleton } from '@/components/ui/skeleton';
+import { Card } from '@/components/ui/card';
 
 export default function VehicleTracker() {
   const [isMounted, setIsMounted] = useState(false);
