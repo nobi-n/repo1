@@ -1,4 +1,4 @@
-import { Badge } from "@/components/ui/badge";
+import { Badge } from "../components/ui/badge";
 import VehicleTracker from "@/components/vehicle-tracker";
 
 export default function Home() {
@@ -23,3 +23,4 @@ export default function Home() {
     </div>
   );
 }
+
